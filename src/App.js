@@ -3,6 +3,7 @@ import { NFTStorage, File } from 'nft.storage'
 import { Buffer } from 'buffer';
 import { ethers } from 'ethers';
 import axios from 'axios';
+import dog from "./dog.png"
 
 // Components
 
@@ -21,7 +22,7 @@ function App() {
 
   const  [name,setName]=useState("");
   const  [description,setDescription]=useState("");
-  const  [image,setImage]=useState(null);
+  const  [image,setImage]=useState(dog);
   const  [url,setURL]=useState(null);
   
   const  [isWaiting,setIsWaiting]=useState(false);
